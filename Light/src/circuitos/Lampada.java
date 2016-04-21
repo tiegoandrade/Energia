@@ -2,26 +2,26 @@ package circuitos;
 
 public class Lampada {
 	
-	// Atributo de Lâmpada, armazena o estado atual da lâmpada.
-	private boolean ligado; 
 	
-	 // Construtor que recebe como parâmetro o estado inicial da lâmpada.
-	public Lampada(boolean ligado){
+	private boolean ligado; //Atributo que informa se a lâmpada está ligada.
+	
+	 
+	public Lampada(boolean ligado){ //Ao construir a lâmpada, é informado o estado dela.
 		this.ligado = ligado;
 	}
 	
-	// Método que liga a lâmpada
-	public void ligar(){
+	
+	public void ligar(){ //Método que liga a lâmpada
 		ligado = true;
 	}
 	
-	// Método que desliga a lâmpada
-	public void desligar(){
+	
+	public void desligar(){ //Método que desliga a lâmpada
 		ligado = false;
 	}
 	
-	//Método que apresenta se a lâmpada está ligada ou não.
-	public void imprimir(){
+	
+	public void imprimir(){ //Método que apresenta se a lâmpada está ligada ou não.
 		
 		if (ligado){
 			System.out.println("Lâmpada Ligada");
